@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>営業案内|ラーメンショップヤマト善部店</title>
+    <link href="information_style.css" rel="stylesheet" type="text/css">
+</head>
+    
+    <body>
+<header>
+    <a href="../index.html"><img src="logo.jpg" alt="ロゴ" width="180" height="90"></a>
+    <nav class="gnav">
+        <ul class="menu">
+            <li><a href="../takeout/takeout.html">テイクアウト</a></li>
+            <li><a href="../delivery/delivery.html">デリバリー</a></li>
+            <li><a href="../menu/menu.html">メニュー</a></li>
+            <!--<li><a href="information.html">お問い合わせ</a></li>-->
+        </ul>
+    </nav>
+    
+    
+    
+</header>
+
+<main>
+    <h1>お問い合わせ</h1>
+    <a href="tel:0453662832">お電話でのお問い合わせ:045-366-2832</a>
+    <a href="mailto:jin.break@gmail.com">メールでのお問い合わせ:jin.break@gmail.com</a>
+    <p>お問い合わせフォーム</p>
+    <form action="program.php" method="post">
+        <dl>
+            <label>
+                <dt>お名前(必須)</dt>
+                <dd><input type="text" name="your_name" placeholder="大和　太郎" requred></dd>
+            </label>
+            <label>
+                <dt>メールアドレス(必須)</dt>
+                <dd><input type="email" name="mail_address" placeholder="sample@test.com" required></dd>
+            </label>
+            <label>
+                <dt>お電話番号</dt>
+                <dd><input type="tel" name="phone_number" placeholder="123-4567-8910"></dd>
+            </label>
+            <label>
+                <dt>お問い合わせ内容</dt>
+                <dd><textarea name="inquiry" cols="60" rows="10" wrap="soft" placeholder="お問い合わせ内容を入力してください。"></textarea></dd>
+            </label>
+        </dl>
+        <button type="reset" name="reset_button">リセットする</button>
+        <button type="submit" name="submit_button">送信する</button>
+    </form>
+    
+</main>
+    
+<footer>
+    <!--<ul class="footer-menu">
+     <li>home ｜</li>
+     <li>about ｜</li>
+     <li>service ｜</li>
+     <li>Contact Us</li>
+    </ul>-->
+    <p>© All rights reserved by Zon Co., Ltd.</p>
+  </footer>
+    
+</body>
+</html>
