@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body {
+    margin-top:100px;
+}
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 85px; /* 高さを100pxに指定 */
+    background:#ffde00; /* 背景色にイエローを指定 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: bordre-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index:2;
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+main {
+    height: 200vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+    margin-top:100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.banner_menu{
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+.banner_ramen{
+    padding-right:20px;
+}
+
+.banner_chahan{
+    padding-right:20px;
+}
+
+.banner_teishoku{
+    padding-right:20px;
+}
+
+h2{
+    border-bottom:dotted;/*下線を点線にする*/
+    border-color:#FF0000;
+    border-width:5px;
+}
+
+.menu_block{
+    margin:15px 40px 15px 40px;
+    width:20%;
+}
+
+.menu_raw{
+    display: flex; /* 中の要素を横並びにする */
+
+}
+
+.author-info2 {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.author-info2 a {
+  color: white;
+}
+img2 {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider2 > a {
+  display:none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider2 > a:active {
+  top: 1px;
+}
+.slider2 > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider2 > a {
+    display: none;
+  }
+}
+
+
+dl{
+  background:#eee;
+  padding:10px;
+  width:800px;
+}
+
+dt{
+  color:navy;
+  font-weight:bold;
+  padding:0 10px 0 0;
+  width:120px;
+  float:left;
+  margin-bottom:7px;
+}
+
+dd{
+  color:#333;
+  margin-bottom:7px;
+}
+
+dl::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #ffde00;
+    text-align: center;
+    box-sizing: bordre-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    bottom: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index:2;
+}
+ul.footer-menu li {
+display: inline;
+}
